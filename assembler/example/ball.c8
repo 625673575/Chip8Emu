@@ -1,0 +1,73 @@
+; ball moving across the screen
+RND V0, #3E ; x position
+LD V5, V0  ; last x position
+ADD V0, #1
+RND V1, #1E ; y position
+LD V6, V1 ; last y position
+ADD V1, #1
+
+RND V2, #1  ; x direction, 0 is ->, 1 is <-
+RND V3, #1  ; y direction, 0 is \/, 1 is /\
+LD  V4, #1  ; constant to subtract
+
+LD I, :ball ; ball sprite
+
+DRW V5, V6, #2
+:start
+
+; horizontal movement
+SE V2, #0
+JP :left
+; x moving to the right
+ADD V0, #1
+JP :end_horizontal
+:left
+; x moving to the left
+SUB V0, V4
+:end_horizontal
+
+; horizontal bound check
+SE V0, #0
+JP :no_left_collision
+LD V2, #0
+JP :end_horizontal_collision
+:no_left_collision
+SE V0, #3E
+JP :end_horizontal_collision
+LD V2, #1
+:end_horizontal_collision
+
+; vertical movement
+SE V3, #0
+JP :up
+; y moving down
+ADD V1, #1
+JP :end_vertical
+:up
+; y moving up
+SUB V1, V4
+:end_vertical
+
+; vertical bound check
+SE V1, #0
+JP :no_top_collision
+LD V3, #0
+JP :end_vertical_collision
+:no_top_collision
+SE V1, #1E
+JP :end_vertical_collision
+LD V3, #1
+:end_vertical_collision
+
+DRW V5, V6, #2 ; erase last frame's ball
+DRW V0, V1, #2 ; draw this frame's ball
+
+; save last position
+LD V5, V0
+LD V6, V1
+
+JP :start
+
+:ball
+#C0
+#C0

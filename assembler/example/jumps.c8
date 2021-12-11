@@ -1,0 +1,13 @@
+LD V0,#2
+LD V1,#2
+LD I, :ball
+:draw
+DRW V0,V1,,#6
+JP :draw
+:ball
+#C0
+#C0
+#0C
+#88
+#11
+#33

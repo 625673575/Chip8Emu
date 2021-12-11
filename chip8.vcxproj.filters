@@ -1,0 +1,228 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Memory\memory.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CPU\cpu.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="input\keyboard.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="display\display.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="display\display_SDL2_Impl.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="display\display_glew_Impl.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="third-party\fmt\format.cc">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="third-party\fmt\os.cc">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="disassemble\parser.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="framework\window.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="framework\disasm_window.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="third-party\imgui\imgui.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="third-party\imgui\imgui_demo.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="third-party\imgui\imgui_draw.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="third-party\imgui\imgui_impl_sdl.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="third-party\imgui\imgui_widgets.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="third-party\imgui\imgui_impl_opengl2.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="third-party\imgui\imgui_impl_opengl3.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="third-party\imgui\imgui_impl_win32.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="framework\debugger_window.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="debugger\debugger.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="common\io.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="assembler\Instruction.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="assembler\Lexer.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="assembler\Parser.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="assembler\Token.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Memory\memory.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="common\types.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CPU\cpu.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="input\keyboard.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="display\display.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="display\display_SDL2_Impl.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="display\display_glew_Impl.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="third-party\fmt\chrono.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="third-party\fmt\color.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="third-party\fmt\compile.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="third-party\fmt\core.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="third-party\fmt\format.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="third-party\fmt\format-inl.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="third-party\fmt\locale.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="third-party\fmt\os.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="third-party\fmt\ostream.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="third-party\fmt\posix.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="third-party\fmt\printf.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="third-party\fmt\ranges.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="disassemble\parser.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="framework\window.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="third-party\imgui\imconfig.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="third-party\imgui\imgui.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="third-party\imgui\imgui_impl_sdl.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="third-party\imgui\imgui_internal.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="third-party\imgui\imstb_rectpack.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="third-party\imgui\imstb_textedit.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="third-party\imgui\imstb_truetype.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="framework\disasm_window.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="third-party\imgui\imgui_impl_opengl2.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="third-party\imgui\imgui_impl_opengl3.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="third-party\imgui\imgui_impl_win32.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="framework\imgui_window.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="disassemble\instruction.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="framework\debugger_window.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="debugger\debugger.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="common\io.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="assembler\Instruction.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="assembler\Lexer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="assembler\Parser.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="assembler\Token.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="third-party\imgui\imgui_memory_editor.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
